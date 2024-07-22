@@ -1,0 +1,12 @@
+--- 
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: test-eks
+  region: us-east-2
+
+nodeGroups:
+  - name: ng-default
+    instanceType: t3.large
+    desiredCapacity: 2
